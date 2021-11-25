@@ -8,11 +8,15 @@ class CategoriesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('DeliMeal'),
-      ),
-      body: GridView(
+
+    //this screen now belongs to the scaffold of the tabs screen, hence only
+    // Gridview should be returned.
+    // return Scaffold(
+    //   appBar: AppBar(
+    //     title: const Text('DeliMeal'),
+    //   ),
+    //   body: 
+    return  GridView(
         padding: const EdgeInsets.all(25),
         children: DUMMY_CATEGORIES.map(
           (catData) => CategoryItem(
@@ -29,7 +33,6 @@ class CategoriesScreen extends StatelessWidget {
           crossAxisSpacing: 20,
           mainAxisExtent: 135,
         )
-      ),
     );
   }
 }
