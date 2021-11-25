@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 
-import './favorites-screen.dart';
-import './categories_screen.dart';
+import '../screens/favorites-screen.dart';
+import '../screens/categories_screen.dart';
 
 class TabsScreen extends StatefulWidget {
 
